@@ -1,2 +1,6 @@
-/* This is a file inserted to keep the learn IDE browser happy */
-const testVar = {}
+describe("index.js", () => {
+    it("exists", () => {
+      expect(testVar).to.exist
+      expect(testVar).to.deep.equal({}) //without .deep, {} does not equal {}
+    })
+  })
